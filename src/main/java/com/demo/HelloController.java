@@ -24,4 +24,9 @@ public class HelloController {
     public Map<String, String> health() {
         return Map.of("status", "UP");
     }
+
+    @GetMapping("/greet")
+    public Map<String, String> greet() {
+        return Map.of("greeting", "Hello from Spring Boot!");
+    }
 }
